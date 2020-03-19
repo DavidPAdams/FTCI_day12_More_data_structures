@@ -52,9 +52,39 @@ class Main {
 
     System.out.println("A toad in the linked list? " + animals.contains("toad"));
 
-    
+    Integer howMany = animals.size();
+    System.out.printf("My LinkedList of animals has %d entries\n", howMany);
+
+    System.out.printf("The animal at index 3 is %s\n", animals.get(3));
+
   }
 }
 
 
+// Queue is an interface, not an object
+import java.util.LinkedList;
+import java.util.Queue;
+
+class Main {
+
+  public static void main(String[] args) {
+    Queue<Integer> bbq = new LinkedList<Integer>();
+    for(int i = 1; i < 7; i++) bbq.add(i);
+
+    System.out.println(bbq);
+
+    Integer hat = bbq.remove();
+    System.out.printf("removed head element: %d\n", hat);
+
+    System.out.println(bbq);
+
+    Integer look = bbq.peek();
+    System.out.printf("the head element looks like %d\n", look);
+
+    System.out.println(bbq);
+
+    Integer num = bbq.size();
+    System.out.printf("the size is: %d\n", num);
+  }
+}
 
