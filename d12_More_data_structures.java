@@ -62,6 +62,7 @@ class Main {
 
 
 // Queue is an interface, not an object
+// first in first out
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -85,6 +86,35 @@ class Main {
 
     Integer num = bbq.size();
     System.out.printf("the size is: %d\n", num);
+  }
+}
+
+
+// Stack
+// last in first out
+
+class Main {
+
+  public static void main(String[] args) {
+    Stack<String> strStack = new Stack<String>();
+    
+    strStack.push("apple");
+    strStack.push("banana");
+    strStack.push("cherry");
+
+    System.out.println(strStack);
+
+    System.out.println(strStack.peek());
+
+    System.out.println(strStack.empty());
+
+    System.out.println(strStack);
+
+    System.out.println(strStack.pop());
+
+    System.out.println(strStack);
+
+    System.out.println(strStack.search("banana"));
   }
 }
 
